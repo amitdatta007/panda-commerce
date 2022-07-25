@@ -8,8 +8,11 @@
     <title>Panda Commerce</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
     <style>
-        .caro-bg{
+        .caro-bg,.subscribe{
             background-color: #FCE9E8;
+        }
+        .subscribe{
+            height: 350px;
         }
     </style>
 </head>
@@ -29,9 +32,9 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Shoes</a>
-                        <a class="nav-link" href="#">Backpack</a>
-                        <a class="nav-link">Subscribe</a>
+                        <a class="nav-link" href="#shoes">Shoes</a>
+                        <a class="nav-link" href="#bag">Backpack</a>
+                        <a class="nav-link" href="#sub">Subscribe</a>
                     </div>
                 </div>
             </div>
@@ -133,9 +136,7 @@
                 </div>
               </div>
         </section>
-
-
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2>Shoes</h2>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 col-sm-12">
@@ -167,7 +168,7 @@
                 </div>
             </div>
         </section>
-        <section class="container my-5">
+        <section class="container my-5" id="bag">
             <h2>Backpack</h2>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 col-sm-12">
@@ -199,7 +200,25 @@
                 </div>
             </div>
         </section>
+
+        <section class="container d-flex justify-content-center align-items-center rounded-3 subscribe my-5" id="sub">
+            <div>
+                <h2>LET'S STAY IN TOUCH</h2>
+            <p>Get updates on sales, specials and more</p>
+            <form>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+        </section>
     </main>
+    <footer>
+        <p class="text-center text-secondary"><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
